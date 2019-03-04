@@ -1,3 +1,4 @@
+<%@ page import="com.buxz.enterprise_portal.entity.News" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%
     String path = request.getContextPath();

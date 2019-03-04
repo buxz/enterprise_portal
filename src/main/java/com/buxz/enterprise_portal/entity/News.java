@@ -66,7 +66,7 @@ public class News {
 					// 返回属性添加字符串数据用于页面显示新闻时间
 					sb.append("<td >" + NewsTime + "</td>");
 					// 返回属性添加字符串数据用于页面显示详情按钮
-					sb.append("<td ><a style=\"color:#3F862E\" target=\"_blank\" href=\"newsFrontDetail.jsp?newsId="
+					sb.append("<td ><a style=\"color:#3F862E\" target=\"_blank\" href=\"/front/newsFrontDetail?newsId="
 							+ NewsID + "\">详情</a></td></tr>");
 
 					rs.next();// 判定是否存在下一条信息

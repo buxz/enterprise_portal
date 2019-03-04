@@ -67,6 +67,7 @@
                             String strPage = request.getParameter("intPage");
                             String sPage = request.getContextPath() + request.getServletPath() + "?";
                             String sOK = news.ListNewsFront(sPage, strPage);
+                            System.out.println("返回结果=="+sOK);
                             if (sOK.equals("No")) {
                                 out.println("数据服务器出现错误！");
                             } else {
