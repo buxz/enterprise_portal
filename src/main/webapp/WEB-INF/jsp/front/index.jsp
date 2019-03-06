@@ -79,7 +79,7 @@
     Copyright 2016 企业门户网站 All Rights.
     <br>
     <a href="http://www.mingrisoft.com">吉林省明日科技有限公司</a> 技术支持
-    <a href="<%=basePath%>/admin/login.jsp">后台</a>
+    <a href="<%=basePath%>/admin">后台</a>
     <br>
     吉ICP备  10002740号-2  吉公网安备22010202000132号
 </div>

@@ -11,17 +11,14 @@ public class WebConfiguration implements WebMvcConfigurer{
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/front").setViewName("front/index");
-        registry.addViewController("/front/content").setViewName("front/content");
-        registry.addViewController("/front/contact").setViewName("front/contact");
-        registry.addViewController("/front/about").setViewName("front/about");
-        registry.addViewController("/front/newsFrontList").setViewName("front/newsFrontList");
-        registry.addViewController("/front/newsFrontDetail").setViewName("front/newsFrontDetail");
+        registry.addViewController("").setViewName("front/index");
+        registry.addViewController("/admin").setViewName("admin/login");
     }
 
     /* 资源处理器 */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/front/resources/**").addResourceLocations("/WEB-INF/jsp/front/");
-        registry.addResourceHandler("/static/**").addResourceLocations("/WEB-INF/"+"/static/");
+        registry.addResourceHandler("/admin/resources/**").addResourceLocations("/WEB-INF/jsp/admin/");
     }
 }
